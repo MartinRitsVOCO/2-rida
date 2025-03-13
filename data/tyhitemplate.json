@@ -1,0 +1,79 @@
+[
+	{
+		"templateID": 0, 
+		"subject": [
+			{
+				"content": "Teie tellimuse kinnitus – Tellimus #123456",
+				"red_flag": false
+			},
+			{
+				"content": "(teema puudub)",
+				"red_flag": true
+			}
+		],
+        "senders": [
+            {
+                "content": "support@webstore.com",
+                "red_flag": false
+            },
+            {
+                "content": "support@ecommerce.com",
+                "red_flag": false
+            },
+            {
+                "content": "support@webbstore.xyz",
+                "red_flag": true
+            }
+        ],
+        "greetings": [
+            {
+                "content": "",
+                "red_flag": false
+            },
+            {
+                "content": "",
+                "red_flag": true
+            }
+        ],
+        "main_content": [
+            {
+                "content": "Täname tellimuse eest! Teie tellimus #[123456] on edukalt esitatud ja see toimetatakse kohale [kuupäev].",
+                "red_flag": false
+            },
+            {
+                "content": "Täname tellimuse eest! Teie tellimuse info on kätte saadav leheküljelt",
+                "red_flag": true
+            }
+        ],
+        "endings": [
+            {
+                "content": "Parimate soovidega, [Veebipood] klienditugi.",
+                "red_flag": false
+            },
+            {
+                "content": " ",
+                "red-flag": true
+            }
+        ],
+        "links": [
+            {
+                "content": "www.omniva.ee",
+                "red-flag": false
+            },
+            {
+                "content": "www.omnva.com",
+                "red-flag": true
+            }
+        ],
+        "attachments": [
+            {
+                "content": "invoice.pdf",
+                "red_flag": false
+            },
+            {
+                "content": "invoice.pdf.exe",
+                "red_flag": true
+            }
+        ]
+	}
+]

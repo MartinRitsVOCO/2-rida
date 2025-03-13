@@ -1,0 +1,80 @@
+[
+	{
+		"templateID": 0,
+		"subject": [
+			{
+				"content": "",
+				"red_flag": false
+			},
+			{
+				"content": "",
+				"red_flag": true
+			}
+		],
+        "senderAccount": [
+            "sdfjsdpof", "sdkfmsdkfmsk"
+        ],
+        "senders": [
+            {
+                "content": "",
+                "account": [],
+                "domain": [],
+                "red_flag": false
+            },
+            {
+                "content": "",
+                "red_flag": true
+            }
+        ],
+        "greetings": [
+            {
+                "content": "",
+                "red_flag": false
+            },
+            {
+                "content": "",
+                "red_flag": true
+            }
+        ],
+        "main_content": [
+            {
+                "content": "",
+                "red_flag": false
+            },
+            {
+                "content": "",
+                "red_flag": true
+            }
+        ],
+        "endings": [
+            {
+                "content": "",
+                "red_flag": false
+            },
+            {
+                "content": "",
+                "red-flag": true
+            }
+        ],
+        "links": [
+            {
+                "content": "",
+                "red-flag": false
+            },
+            {
+                "content": "",
+                "red-flag": true
+            }
+        ],
+        "attachments": [
+            {
+                "content": "",
+                "red_flag": false
+            },
+            {
+                "content": "",
+                "red_flag": true
+            }
+        ]
+	}
+]
