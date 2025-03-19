@@ -1,80 +1,1078 @@
 [
-	{
-		"templateID": 0,
-		"subject": [
-			{
-				"content": "",
-				"red_flag": false
-			},
-			{
-				"content": "",
-				"red_flag": true
-			}
-		],
-        "senderAccount": [
-            "sdfjsdpof", "sdkfmsdkfmsk"
-        ],
-        "senders": [
+    {
+        "templateID": 1, 
+        "subject": [
             {
-                "content": "",
-                "account": [],
-                "domain": [],
+                "content": "Teie Netflixi tellimus on uuendatud",
                 "red_flag": false
             },
             {
-                "content": "",
+                "content": "KIIRUSTAGE: Teie Netflixi konto peatatakse täna!",
+                "red_flag": true
+            }
+        ],
+        "senders": [
+            {
+                "content": "no-reply@netflix.com",
+                "red_flag": false
+            },
+            {
+                "content": "netflix-support@account-secure.com",
                 "red_flag": true
             }
         ],
         "greetings": [
             {
-                "content": "",
+                "content": "Tere [Teie Nimi], siin on teie tellimuse andmed!",
                 "red_flag": false
             },
             {
-                "content": "",
+                "content": "Lugupeetud klient, teie konto on ohus!",
                 "red_flag": true
             }
         ],
         "main_content": [
             {
-                "content": "",
+                "content": "Teie Netflixi tellimus on edukalt uuendatud. Teie järgmine arvelduskuupäev on 15. aprill 2025. Teie poolt ei ole vaja täiendavaid toiminguid.",
                 "red_flag": false
             },
             {
-                "content": "",
+                "content": "Me ei saanud teie makset töödelda ja teie Netflixi konto peatatakse 24 tunni jooksul. Uuendage oma arveldusandmeid kohe, klõpsates alloleval lingil!",
                 "red_flag": true
             }
         ],
         "endings": [
             {
-                "content": "",
+                "content": "Parimate soovidega, Netflixi meeskond",
                 "red_flag": false
             },
             {
-                "content": "",
-                "red-flag": true
+                "content": "Tegutsege kohe! Klõpsake lingil, et oma konto taastada!",
+                "red_flag": true
             }
         ],
         "links": [
             {
-                "content": "",
-                "red-flag": false
+                "content": "https://www.netflix.com/account",
+                "red_flag": false
             },
             {
-                "content": "",
-                "red-flag": true
+                "content": "https://netflix-arveldus-uuendus.com",
+                "red_flag": true
             }
         ],
         "attachments": [
             {
-                "content": "",
+                "content": "arve.pdf",
                 "red_flag": false
             },
             {
-                "content": "",
+                "content": "arve.pdf.exe",
                 "red_flag": true
             }
         ]
-	}
+    },
+    {
+        "templateID": 2, 
+        "subject": [
+            {
+                "content": "Teie Amazon Prime liikmelisuse uuendamise kinnitus",
+                "red_flag": false
+            },
+            {
+                "content": "Viimane hoiatus: Teie Amazoni konto lukustatakse!",
+                "red_flag": true
+            }
+        ],
+        "senders": [
+            {
+                "content": "billing@amazon.com",
+                "red_flag": false
+            },
+            {
+                "content": "support@amazon.com",
+                "red_flag": false
+            },
+            {
+                "content": "amazon-prime@verify-payments.com",
+                "red_flag": true
+            }
+        ],
+        "greetings": [
+            {
+                "content": "Tere [Teie Nimi], teie Amazon Prime liikmelisus on uuendatud.",
+                "red_flag": false
+            },
+            {
+                "content": "Lugupeetud klient, palun kinnitage oma konto andmed.",
+                "red_flag": true
+            }
+        ],
+        "main_content": [
+            {
+                "content": "Teie Amazon Prime tellimus uuendatakse automaatselt 28. märtsil 2025, kasutades teie salvestatud makseviisi. Teie poolt ei ole vaja täiendavaid toiminguid.",
+                "red_flag": false
+            },
+            {
+                "content": "Teilt on võetud 149,99 € Amazon Prime eest. Kui see on eksitus, taotlege tagasimakset 12 tunni jooksul, klõpsates alloleval lingil.",
+                "red_flag": true
+            }
+        ],
+        "endings": [
+            {
+                "content": "Parimate soovidega, Amazoni meeskond",
+                "red_flag": false
+            },
+            {
+                "content": "Klõpsake kohe, et vältida konto sulgemist!",
+                "red_flag": true
+            }
+        ],
+        "links": [
+            {
+                "content": "https://www.amazon.com/yourmembershipsandsubscriptions",
+                "red_flag": false
+            },
+            {
+                "content": "https://amazon.verify-payments.com",
+                "red_flag": true
+            }
+        ],
+        "attachments": [
+            {
+                "content": "kviitung.pdf",
+                "red_flag": false
+            },
+            {
+                "content": "amazon_tagasimakse.pdf.exe",
+                "red_flag": true
+            }
+        ]
+    },
+    {
+        "templateID": 3, 
+        "subject": [
+            {
+                "content": "Teie PayPali tehingu kviitung",
+                "red_flag": false
+            },
+            {
+                "content": "Turvahoiatus: Teie PayPali konto on piiratud!",
+                "red_flag": true
+            }
+        ],
+        "senders": [
+            {
+                "content": "service@paypal.com",
+                "red_flag": false
+            },
+            {
+                "content": "support@paypal.com",
+                "red_flag": false
+            },
+            {
+                "content": "paypal-security@verify-account.com",
+                "red_flag": true
+            }
+        ],
+        "greetings": [
+            {
+                "content": "Tere [Teie Nimi], teie hiljutise tehingu andmed on allpool.",
+                "red_flag": false
+            },
+            {
+                "content": "Lugupeetud kasutaja, teie konto on märgitud kahtlase tegevuse tõttu!",
+                "red_flag": true
+            }
+        ],
+        "main_content": [
+            {
+                "content": "Teie hiljutine makse summas 29,99 € kaupmehele [Merchant] õnnestus. Kui te ei volitanud seda makset, võtke meiega kohe ühendust.",
+                "red_flag": false
+            },
+            {
+                "content": "Tuvastasime teie kontol kahtlase tegevuse. Palun kinnitage oma isik viivitamatult, et vältida konto peatamist!",
+                "red_flag": true
+            }
+        ],
+        "endings": [
+            {
+                "content": "Täname, et kasutate PayPali!",
+                "red_flag": false
+            },
+            {
+                "content": "Klõpsake alloleval lingil KOHE, et oma konto kinnitada!",
+                "red_flag": true
+            }
+        ],
+        "links": [
+            {
+                "content": "https://www.paypal.com/myaccount/transactions",
+                "red_flag": false
+            },
+            {
+                "content": "https://paypal-security-check.com",
+                "red_flag": true
+            }
+        ],
+        "attachments": [
+            {
+                "content": "tehingu_kviitung.pdf",
+                "red_flag": false
+            },
+            {
+                "content": "paypal_kinnitamine.exe",
+                "red_flag": true
+            }
+        ]
+    },
+    {
+        "templateID": 4, 
+        "subject": [
+            {
+                "content": "Teie Microsoft 365 tellimus on uuendatud",
+                "red_flag": false
+            },
+            {
+                "content": "Tähtis: Teie Microsofti konto suletakse!",
+                "red_flag": true
+            }
+        ],
+        "senders": [
+            {
+                "content": "no-reply@microsoft.com",
+                "red_flag": false
+            },
+            {
+                "content": "billing@microsoft.com",
+                "red_flag": false
+            },
+            {
+                "content": "microsoft-support@account-security.com",
+                "red_flag": true
+            }
+        ],
+        "greetings": [
+            {
+                "content": "Tere [Teie Nimi], teie Microsoft 365 tellimus on uuendatud.",
+                "red_flag": false
+            },
+            {
+                "content": "Lugupeetud kasutaja, teie konto aktiivsena hoidmiseks on vaja kiiret tegutsemist!",
+                "red_flag": true
+            }
+        ],
+        "main_content": [
+            {
+                "content": "Teie Microsoft 365 tellimus on edukalt uuendatud. Teie järgmine arvelduskuupäev on 5. mai 2025. Täiendavaid toiminguid ei ole vaja.",
+                "red_flag": false
+            },
+            {
+                "content": "Tuvastasime teie Microsofti kontol kahtlasi sisselogimiskatseid. Kinnitage oma isik kohe, et vältida konto sulgemist!",
+                "red_flag": true
+            }
+        ],
+        "endings": [
+            {
+                "content": "Parimate soovidega, Microsofti meeskond",
+                "red_flag": false
+            },
+            {
+                "content": "Klõpsake kohe lingil, et vältida konto sulgemist!",
+                "red_flag": true
+            }
+        ],
+        "links": [
+            {
+                "content": "https://account.microsoft.com/services/",
+                "red_flag": false
+            },
+            {
+                "content": "https://microsoft-account-security.com",
+                "red_flag": true
+            }
+        ],
+        "attachments": [
+            {
+                "content": "arve.pdf",
+                "red_flag": false
+            },
+            {
+                "content": "microsoft_kinnitamine.exe",
+                "red_flag": true
+            }
+        ]
+    },
+    {
+        "templateID": 5, 
+        "subject": [
+            {
+                "content": "Teie Apple ID ostukviitung",
+                "red_flag": false
+            },
+            {
+                "content": "HOIATUS: Teie Apple ID on lukustatud!",
+                "red_flag": true
+            }
+        ],
+        "senders": [
+            {
+                "content": "no-reply@apple.com",
+                "red_flag": false
+            },
+            {
+                "content": "billing@apple.com",
+                "red_flag": false
+            },
+            {
+                "content": "apple-support@id-verification.com",
+                "red_flag": true
+            }
+        ],
+        "greetings": [
+            {
+                "content": "Tere [Teie Nimi], siin on teie hiljutine Apple ID ostukviitung.",
+                "red_flag": false
+            },
+            {
+                "content": "Lugupeetud Apple'i kasutaja, teie konto avamiseks on vaja kohest tegutsemist!",
+                "red_flag": true
+            }
+        ],
+        "main_content": [
+            {
+                "content": "Teie hiljutine ost summas 9,99 € Apple Music tellimuse eest õnnestus. Kui teil on küsimusi, võtke ühendust klienditoega.",
+                "red_flag": false
+            },
+            {
+                "content": "Tuvastasime teie Apple ID-l ebatavalist tegevust. Kinnitage oma isik kohe, et juurdepääs taastada!",
+                "red_flag": true
+            }
+        ],
+        "endings": [
+            {
+                "content": "Täname, et kasutate Apple'i teenuseid!",
+                "red_flag": false
+            },
+            {
+                "content": "Klõpsake alloleval lingil kohe, et juurdepääs taastada!",
+                "red_flag": true
+            }
+        ],
+        "links": [
+            {
+                "content": "https://appleid.apple.com/account",
+                "red_flag": false
+            },
+            {
+                "content": "https://appleid-security.com",
+                "red_flag": true
+            }
+        ],
+        "attachments": [
+            {
+                "content": "kviitung.pdf",
+                "red_flag": false
+            },
+            {
+                "content": "apple_kinnitamine.exe",
+                "red_flag": true
+            }
+        ]
+    },
+    {
+        "templateID": 6,
+        "subject": [
+            {
+                "content": "Teie igakuine kontoväljavõte on valmis",
+                "red_flag": false
+            },
+            {
+                "content": "Kiire: Teie konto suletakse 24 tunni jooksul!",
+                "red_flag": true
+            }
+        ],
+        "senders": [
+            {
+                "content": "noreply@swedbank.ee",
+                "red_flag": false
+            },
+            {
+                "content": "teated@lhv.ee",
+                "red_flag": false
+            },
+            {
+                "content": "turvalisus@teie-pank-alerts.com",
+                "red_flag": true
+            }
+        ],
+        "greetings": [
+            {
+                "content": "Lugupeetud [Teie Eesnimi],",
+                "red_flag": false
+            },
+            {
+                "content": "Lugupeetud klient,",
+                "red_flag": true
+            }
+        ],
+        "main_content": [
+            {
+                "content": "Teie igakuine kontoväljavõte kuuks [Kuu] on nüüd saadaval. Seda saab turvaliselt vaadata ja alla laadida teie internetipangas.",
+                "red_flag": false
+            },
+            {
+                "content": "Tuvastasime teie kontol volitamata tehingu summas 1 200 €. Kui see ei olnud teie, kinnitage kohe, klõpsates alloleval turvalisel lingil: [Võlts Link]",
+                "red_flag": true
+            }
+        ],
+        "endings": [
+            {
+                "content": "Täname, et olete meie panga klient. Hindame teie usaldust.\nLugupidamisega,\n[Teie Panga Nimi] klienditoe meeskond",
+                "red_flag": false
+            },
+            {
+                "content": "Kui te ei tegutse kohe, suletakse teie konto. Klõpsake siin, et taastada juurdepääs: [Võlts Link]",
+                "red_flag": true
+            }
+        ],
+        "links": [
+            {
+                "content": "https://www.swedbank.ee",
+                "red_flag": false
+            },
+            {
+                "content": "https://turvaline-panga-kinnitus.com/login",
+                "red_flag": true
+            }
+        ],
+        "attachments": [
+            {
+                "content": "Konto_valjavote_Märts2025.pdf",
+                "red_flag": false
+            },
+            {
+                "content": "PangaValjavote.exe",
+                "red_flag": true
+            }
+        ]
+    },
+    {
+        "templateID": 7,
+        "subject": [
+            {
+                "content": "Turvahoiatus: tuvastati uus sisselogimine",
+                "red_flag": false
+            },
+            {
+                "content": "Kinnitage oma konto kohe, et vältida peatamist!",
+                "red_flag": true
+            }
+        ],
+        "senders": [
+            {
+                "content": "onlinebanking@swedbank.ee",
+                "red_flag": false
+            },
+            {
+                "content": "support@turvaline-pank-login.com",
+                "red_flag": true
+            }
+        ],
+        "greetings": [
+            {
+                "content": "Tere, [Teie Eesnimi],",
+                "red_flag": false
+            },
+            {
+                "content": "Tähelepanu: konto omanik,",
+                "red_flag": true
+            }
+        ],
+        "main_content": [
+            {
+                "content": "Tuvastasime uue seadme sisselogimiskatse kuupäeval [Kuupäev, Kellaaeg]. Kui see olite teie, ei ole vaja midagi teha. Kui mitte, siis palun lähtestage oma parool kohe.",
+                "red_flag": false
+            },
+            {
+                "content": "Teie konto on ohus! Taastage juurdepääs kohe, klõpsates alloleval lingil: [Võlts Link]",
+                "red_flag": true
+            }
+        ],
+        "endings": [
+            {
+                "content": "Kui teil on küsimusi, võtke ühendust meie klienditoega telefonil [ametlik number].",
+                "red_flag": false
+            },
+            {
+                "content": "Kui te ei kinnita oma identiteeti 24 tunni jooksul, suletakse teie konto jäädavalt!",
+                "red_flag": true
+            }
+        ],
+        "links": [
+            {
+                "content": "https://www.swedbank.ee",
+                "red_flag": false
+            },
+            {
+                "content": "http://teie-pank.konto-uuendus.com",
+                "red_flag": true
+            }
+        ],
+        "attachments": [
+            {
+                "content": "Turvahoiatus.pdf",
+                "red_flag": false
+            },
+            {
+                "content": "Kiire_Arve.zip",
+                "red_flag": true
+            }
+        ]
+    },
+    {
+        "templateID": 8,
+        "subject": [
+            {
+                "content": "Teie laenutaotluse dokumendid on valmis",
+                "red_flag": false
+            },
+            {
+                "content": "Eripakkumine laenule - ainult piiratud ajaks!",
+                "red_flag": true
+            }
+        ],
+        "senders": [
+            {
+                "content": "laenud@swedbank.ee",
+                "red_flag": false
+            },
+            {
+                "content": "kiirlaen@rahalaenud-pakkumised.com",
+                "red_flag": true
+            }
+        ],
+        "greetings": [
+            {
+                "content": "Lugupeetud [Teie Eesnimi],",
+                "red_flag": false
+            },
+            {
+                "content": "Lugupeetud Taotleja,",
+                "red_flag": true
+            }
+        ],
+        "main_content": [
+            {
+                "content": "Teie laenulepingud on koostatud ning need on saadaval turvaliseks ülevaatamiseks ja digitaalseks allkirjastamiseks.",
+                "red_flag": false
+            },
+            {
+                "content": "Kiire kinnitus! Klõpsake alloleval lingil ja sisestage oma andmed, et saada eripakkumine laenule.",
+                "red_flag": true
+            }
+        ],
+        "endings": [
+            {
+                "content": "Täname, et usaldate meie finantsteenuseid. Küsimuste korral võtke ühendust oma laenunõustajaga.",
+                "red_flag": false
+            },
+            {
+                "content": "Kiirustage! See eksklusiivne laenupakkumine kehtib vaid 12 tundi!",
+                "red_flag": true
+            }
+        ],
+        "links": [
+            {
+                "content": "https://www.swedbank.ee/laenuportaal",
+                "red_flag": false
+            },
+            {
+                "content": "http://eripakkumine-laen-kohe.com",
+                "red_flag": true
+            }
+        ],
+        "attachments": [
+            {
+                "content": "Laenuleping_Kinnitatud.pdf",
+                "red_flag": false
+            },
+            {
+                "content": "Kiirlaen_Pakkumine.docm",
+                "red_flag": true
+            }
+        ]
+    },
+    {
+        "templateID": 9,
+        "subject": [
+            {
+                "content": "Ülekanne kinnitatud - [Summa] edukalt saadetud",
+                "red_flag": false
+            },
+            {
+                "content": "Kiire: Teie kontol avastati kahtlane ülekanne!",
+                "red_flag": true
+            }
+        ],
+        "senders": [
+            {
+                "content": "teavitused@swedbank.ee",
+                "red_flag": false
+            },
+            {
+                "content": "ulekanne@secure-money.xyz",
+                "red_flag": true
+            }
+        ],
+        "greetings": [
+            {
+                "content": "Lugupeetud [Eesnimi],",
+                "red_flag": false
+            },
+            {
+                "content": "Lugupeetud Kasutaja,",
+                "red_flag": true
+            }
+        ],
+        "main_content": [
+            {
+                "content": "Teie ülekanne summas [Summa] saajale [Saaja] on edukalt töödeldud. Ülekande üksikasju saate vaadata oma internetipangas.",
+                "red_flag": false
+            },
+            {
+                "content": "Avastasime teie kontol volitamata ülekande! Tühistage see kohe, klõpsates alloleval lingil: [Võlts link]",
+                "red_flag": true
+            }
+        ],
+        "endings": [
+            {
+                "content": "Täname, et kasutate meie turvalisi pangateenuseid. Küsimuste korral võtke ühendust klienditoega.",
+                "red_flag": false
+            },
+            {
+                "content": "Tegutsege kohe! Kui see ülekanne ei olnud teie poolt, võivad teie rahalised vahendid jäädavalt kaduda!",
+                "red_flag": true
+            }
+        ],
+        "links": [
+            {
+                "content": "https://www.swedbank.ee",
+                "red_flag": false
+            },
+            {
+                "content": "http://secure-money-transfer-alert.com",
+                "red_flag": true
+            }
+        ],
+        "attachments": [
+            {
+                "content": "Ulekande_Kinnitus.pdf",
+                "red_flag": false
+            },
+            {
+                "content": "Kiire_Ulekande_Tuhistamine.docm",
+                "red_flag": true
+            }
+        ]
+    },
+    {
+        "templateID": 10,
+        "subject": [
+            {
+                "content": "Teie laenutaotluse kinnitamine - järgmised sammud",
+                "red_flag": false
+            },
+            {
+                "content": "Eelkinnitatud laenupakkumine! Tegutse kohe!",
+                "red_flag": true
+            }
+        ],
+        "senders": [
+            {
+                "content": "laenud@swedbank.ee",
+                "red_flag": false
+            },
+            {
+                "content": "kiirlaen@rahavariandid.xyz",
+                "red_flag": true
+            }
+        ],
+        "greetings": [
+            {
+                "content": "Lugupeetud [Eesnimi],",
+                "red_flag": false
+            },
+            {
+                "content": "Lugupeetud Laenutaotleja,",
+                "red_flag": true
+            }
+        ],
+        "main_content": [
+            {
+                "content": "Õnnitleme! Teie laenutaotlus on heaks kiidetud. Palun logige oma kontole sisse, et üle vaadata tingimused ja täita vajaminevad sammud.",
+                "red_flag": false
+            },
+            {
+                "content": "Teid on eelkinnitatud eksklusiivse laenupakkumise saajaks! Klõpsake allpool, et raha kohe kätte saada.",
+                "red_flag": true
+            }
+        ],
+        "endings": [
+            {
+                "content": "Täname, et kasutate meie finantsteenuseid. Küsimuste korral võtke ühendust meie laenunõustajatega aadressil [Ametlik Kontakt].",
+                "red_flag": false
+            },
+            {
+                "content": "See pakkumine kehtib vaid 24 tundi! Tegutse kohe või jääd ilma!",
+                "red_flag": true
+            }
+        ],
+        "links": [
+            {
+                "content": "https://www.swedbank.ee/laenud",
+                "red_flag": false
+            },
+            {
+                "content": "http://kiirlaen-vali-kohe.com",
+                "red_flag": true
+            }
+        ],
+        "attachments": [
+            {
+                "content": "Laenuleping.pdf",
+                "red_flag": false
+            },
+            {
+                "content": "Laenu_Kinnitusvorm.scr",
+                "red_flag": true
+            }
+        ]
+    },
+    {
+        "templateID": 11,
+        "subject": [
+            {"content": "Teie Google Workspace'i arve", "red_flag": false},
+            {"content": "KIIRUSTAGE: Makseprobleem tuvastatud", "red_flag": true}
+        ],
+        "senders": [
+            {"content": "arved-noreply@google.com", "red_flag": false},
+            {"content": "tugi@googl-maksed.com", "red_flag": true}
+        ],
+        "greetings": [
+            {"content": "Lugupeetud [Teie Nimi],", "red_flag": false},
+            {"content": "Lugupeetud klient,", "red_flag": true}
+        ],
+        "main_content": [
+            {"content": "Teie Google Workspace'i kuu arve on nüüd saadaval. Saate selle vaadata ja alla laadida oma kontolt.", "red_flag": false},
+            {"content": "Märkasime teie kontol volitamata tegevust. Klõpsake siin kohe, et kinnitada oma makseandmed.", "red_flag": true}
+        ],
+        "endings": [
+            {"content": "— Google Workspace'i meeskond", "red_flag": false},
+            {"content": "Nõuete eiramine toob kaasa trahvid.", "red_flag": true}
+        ],
+        "links": [
+            {"content": "https://pay.google.com", "red_flag": false},
+            {"content": "https://googl-maksed.com/kinnita", "red_flag": true}
+        ],
+        "attachments": [
+            {"content": "arve.pdf", "red_flag": false},
+            {"content": "arve.pdf.exe", "red_flag": true}
+        ]
+    },
+    {
+        "templateID": 12,
+        "subject": [
+            {"content": "Teie makse PayPalile on töödeldud", "red_flag": false},
+            {"content": "KOHESELT VAJALIK: Kinnitage oma makse", "red_flag": true}
+        ],
+        "senders": [
+            {"content": "teenindus@paypal.com", "red_flag": false},
+            {"content": "arveldus@paypal-arveldus-turvaline.com", "red_flag": true}
+        ],
+        "greetings": [
+            {"content": "Tere, [Teie Nimi],", "red_flag": false},
+            {"content": "TÄHELEPANU: Konto omanik,", "red_flag": true}
+        ],
+        "main_content": [
+            {"content": "Saime teie makse summas 45,00 $ ettevõttele XYZ. Teie tehingu ID on 123456789.", "red_flag": false},
+            {"content": "Tuvastasime kahtlase tehingu. Klõpsake siin, et see kohe tühistada.", "red_flag": true}
+        ],
+        "endings": [
+            {"content": "— PayPali klienditugi", "red_flag": false},
+            {"content": "Klõpsake siin kohe, et kinnitada oma identiteet!", "red_flag": true}
+        ],
+        "links": [
+            {"content": "https://www.paypal.com/invoice/p/123456789", "red_flag": false},
+            {"content": "https://paypal-arveldus-turvaline.com/login", "red_flag": true}
+        ],
+        "attachments": [
+            {"content": "arve.pdf", "red_flag": false},
+            {"content": "arve_andmed.zip", "red_flag": true}
+        ]
+    },
+    {
+        "templateID": 13,
+        "subject": [
+            {"content": "Eelseisev maksetähtaeg - Stripe'i meeldetuletus", "red_flag": false},
+            {"content": "Teie konto on makse ebaõnnestumise tõttu lukustatud", "red_flag": true}
+        ],
+        "senders": [
+            {"content": "no-reply@stripe.com", "red_flag": false},
+            {"content": "tugi@stripe-tugi.com", "red_flag": true}
+        ],
+        "greetings": [
+            {"content": "Tere, [Teie Nimi],", "red_flag": false},
+            {"content": "Lugupeetud härra/proua,", "red_flag": true}
+        ],
+        "main_content": [
+            {"content": "Teie arve #987654 tuleb tasuda hiljemalt 25. märtsil 2025. Palun vaadake lisatud arvet.", "red_flag": false},
+            {"content": "Teie konto peatatakse, kui te ei uuenda kohe oma makseandmeid.", "red_flag": true}
+        ],
+        "endings": [
+            {"content": "— Stripe'i meeskond", "red_flag": false},
+            {"content": "Tegutsege kohe, et vältida konto jäädavat sulgemist!", "red_flag": true}
+        ],
+        "links": [
+            {"content": "https://dashboard.stripe.com/invoices", "red_flag": false},
+            {"content": "https://stripe-tugi.com/uuenda-makseinfo", "red_flag": true}
+        ],
+        "attachments": [
+            {"content": "arve.pdf", "red_flag": false},
+            {"content": "arve_uuendus.docx", "red_flag": true}
+        ]
+    },
+    {
+        "templateID": 14,
+        "subject": [
+            {"content": "Teie Apple'i teenuste arve on saadaval", "red_flag": false},
+            {"content": "Ebatavaline tegevus tuvastatud: Kinnitage kohe!", "red_flag": true}
+        ],
+        "senders": [
+            {"content": "invoice@apple.com", "red_flag": false},
+            {"content": "arved@applebilling-help.com", "red_flag": true}
+        ],
+        "greetings": [
+            {"content": "Täname teie makse eest, [Teie Nimi].", "red_flag": false},
+            {"content": "Tere, kasutaja,", "red_flag": true}
+        ],
+        "main_content": [
+            {"content": "Teie hiljutine ost App Store'is on töödeldud. Teie kviitung summas $9.99 on lisatud manusesse.", "red_flag": false},
+            {"content": "Teie Apple ID on ohus. Klõpsake alloleval lingil, et oma konto turvata.", "red_flag": true}
+        ],
+        "endings": [
+            {"content": "— Apple'i arveldustiim", "red_flag": false},
+            {"content": "Logige sisse kohe, et vältida konto peatamist!", "red_flag": true}
+        ],
+        "links": [
+            {"content": "https://reportaproblem.apple.com", "red_flag": false},
+            {"content": "https://applebilling-help.com/tagastamine", "red_flag": true}
+        ],
+        "attachments": [
+            {"content": "kviitung.pdf", "red_flag": false},
+            {"content": "tagasimakse_taotlus.html", "red_flag": true}
+        ]
+    },
+    {
+        "templateID": 15,
+        "subject": [
+            {"content": "Teie Google'i turvakood: 438921", "red_flag": false},
+            {"content": "[Tähtis Teavitus] Tuvastatud ebatavaline sisselogimiskatse", "red_flag": true}
+        ],
+        "senders": [
+            {"content": "no-reply@google.com", "red_flag": false},
+            {"content": "tugi-google@security-alert.com", "red_flag": true}
+        ],
+        "greetings": [
+            {"content": "Tere, [Teie Nimi],", "red_flag": false},
+            {"content": "Lugupeetud kasutaja,", "red_flag": true}
+        ],
+        "main_content": [
+            {"content": "Teie Google'i turvakood on 438921. Palun sisestage see kood oma sisselogimise lõpetamiseks.", "red_flag": false},
+            {"content": "Teie konto on ohus! Klõpsake siin, et oma konto kohe turvata!", "red_flag": true}
+        ],
+        "endings": [
+            {"content": "— Google'i turvatiim", "red_flag": false},
+            {"content": "Kui te ei reageeri 24 tunni jooksul, peatatakse teie konto!", "red_flag": true}
+        ],
+        "links": [
+            {"content": "https://myaccount.google.com/security-checkup", "red_flag": false},
+            {"content": "https://google-secure-login.com/verify", "red_flag": true}
+        ],
+        "attachments": []
+    },
+    {
+        "templateID": 16,
+        "subject": [
+            {"content": "Teie Microsofti turvakood: 827364", "red_flag": false},
+            {"content": "Microsofti konto on lukustatud - Vajalik kiire tegutsemine", "red_flag": true}
+        ],
+        "senders": [
+            {"content": "notifications@microsoft.com", "red_flag": false},
+            {"content": "microsoft-tugi@outlooksecure-help.com", "red_flag": true}
+        ],
+        "greetings": [
+            {"content": "Tere,", "red_flag": false},
+            {"content": "Tähelepanu: Konto omanik,", "red_flag": true}
+        ],
+        "main_content": [
+            {"content": "Teie Microsofti turvakood on 827364. Kasutage seda oma sisselogimise kinnitamiseks.", "red_flag": false},
+            {"content": "Teie konto on lukustatud! Logige sisse kohe, et juurdepääs taastada.", "red_flag": true}
+        ],
+        "endings": [
+            {"content": "— Microsofti kontotiim", "red_flag": false},
+            {"content": "Teie konto suletakse jäädavalt, kui seda ei kinnitata 12 tunni jooksul!", "red_flag": true}
+        ],
+        "links": [
+            {"content": "https://account.microsoft.com/security", "red_flag": false},
+            {"content": "http://microsoft-account-security-alert.com", "red_flag": true}
+        ],
+        "attachments": []
+    },
+    {
+        "templateID": 17,
+        "subject": [
+            {"content": "[Bank of America] Tuvastatud ebatavaline sisselogimiskatse", "red_flag": false},
+            {"content": "Pangakonto peatatud - Vajalik kohene kinnitamine!", "red_flag": true}
+        ],
+        "senders": [
+            {"content": "support@bankofamerica.com", "red_flag": false},
+            {"content": "admin@bankofamericasecure-login.com", "red_flag": true}
+        ],
+        "greetings": [
+            {"content": "Lugupeetud [Teie Täisnimi],", "red_flag": false},
+            {"content": "Tere kallis,", "red_flag": true}
+        ],
+        "main_content": [
+            {"content": "Tuvastasime sisselogimiskatse uuest seadmest. Kui see ei olnud teie, võtke kohe ühendust meie pettuste tuvastamise meeskonnaga.", "red_flag": false},
+            {"content": "Teie konto on lukustatud! Klõpsake siin, et juurdepääs kohe taastada!", "red_flag": true}
+        ],
+        "endings": [
+            {"content": "— Bank of America klienditugi", "red_flag": false},
+            {"content": "Klõpsake kohe või kaotate igaveseks juurdepääsu oma rahale!", "red_flag": true}
+        ],
+        "links": [
+            {"content": "https://www.bankofamerica.com/security-center", "red_flag": false},
+            {"content": "https://bankofamerica-securelogin.com", "red_flag": true}
+        ],
+        "attachments": []
+    },
+    {
+        "templateID": 18,
+        "subject": [
+            {"content": "[HR] Palgaarvestuse muudatused järgmise kuu jaoks", "red_flag": false},
+            {"content": "Teie palgaarvestus on uuendatud - klõpsake siin, et üle vaadata", "red_flag": true}
+        ],
+        "senders": [
+            {"content": "hr@yourcompany.com", "red_flag": false},
+            {"content": "ceo@yourcompany-finance.com", "red_flag": true}
+        ],
+        "greetings": [
+            {"content": "Lugupeetud [Teie Nimi],", "red_flag": false},
+            {"content": "Lugupeetud töötaja konto #294812,", "red_flag": true}
+        ],
+        "main_content": [
+            {"content": "Pange tähele, et palgaarvestuse protsess on muutunud. Kui teil on küsimusi, võtke otse ühendust personaliosakonnaga.", "red_flag": false},
+            {"content": "Teie otsemakse andmeid on muudetud. Klõpsake siin, et vaidlustada!", "red_flag": true}
+        ],
+        "endings": [
+            {"content": "— Teie ettevõtte personaliosakond", "red_flag": false},
+            {"content": "Klõpsake kohe, enne kui teie palk kaob!", "red_flag": true}
+        ],
+        "links": [
+            {"content": "https://yourcompany.com/hr-payroll", "red_flag": false},
+            {"content": "https://yourcompany-finance.com/payroll-update", "red_flag": true}
+        ],
+        "attachments": []
+    },
+    {
+        "templateID": 19,
+        "subject": [
+            {"content": "Amazoni sisselogimise kinnituskood: 857290", "red_flag": false},
+            {"content": "Amazoni konto on lukustatud - vajalik kiire tegutsemine", "red_flag": true}
+        ],
+        "senders": [
+            {"content": "support@amazon.com", "red_flag": false},
+            {"content": "amazon-support@outlooksecure-help.com", "red_flag": true}
+        ],
+        "greetings": [
+            {"content": "Tere,", "red_flag": false},
+            {"content": "Lugupeetud kliendikonto #XYZ123,", "red_flag": true}
+        ],
+        "main_content": [
+            {"content": "Teie Amazoni kinnituskood on 857290. Sisestage see, et oma sisselogimist lõpule viia.", "red_flag": false},
+            {"content": "Teie Amazoni konto on ohus! Klõpsake siin, et see kohe turvata!", "red_flag": true}
+        ],
+        "endings": [
+            {"content": "— Amazoni klienditugi", "red_flag": false},
+            {"content": "Tegutsege kohe või kaotate juurdepääsu jäädavalt!", "red_flag": true}
+        ],
+        "links": [
+            {"content": "https://www.amazon.com/gp/help/customer/display.html", "red_flag": false},
+            {"content": "http://amazon-secure-help.com", "red_flag": true}
+        ],
+        "attachments": []
+    },
+    {
+        "templateID": 20,
+        "subject": [
+            { "content": "Teie 2024. aasta maksutagastus on töödeldud", "red_flag": false },
+            { "content": "KIIRUSTAGE: Lõplik teatis Maksu- ja Tolliametilt - Vajalik viivitamatu tegevus", "red_flag": true }
+        ],
+        "senders": [
+            { "content": "noreply@emta.ee", "red_flag": false },
+            { "content": "support@emta-taxrefund.com", "red_flag": true }
+        ],
+        "greetings": [
+            { "content": "Lugupeetud maksumaksja,", "red_flag": false },
+            { "content": "Austatud kodanik,", "red_flag": true }
+        ],
+        "main_content": [
+            { "content": "Maksu- ja Tolliamet on edukalt töötlenud teie 2024. aasta tuludeklaratsiooni. Oma staatust saate kontrollida aadressil emta.ee.", "red_flag": false },
+            { "content": "Teil on õigus saada maksutagastus summas 1 250,32 €. Kinnitamiseks sisestage oma pangakonto andmed alloleval lingil.", "red_flag": true }
+        ],
+        "endings": [
+            { "content": "Maksu- ja Tolliamet (EMTA)", "red_flag": false },
+            { "content": "Parimate soovidega, EMTA Tugimeeskond", "red_flag": true }
+        ],
+        "links": [
+            { "content": "https://www.emta.ee", "red_flag": false },
+            { "content": "https://www.emta-taxrefund.com", "red_flag": true }
+        ],
+        "attachments": [
+            { "content": "maksutagastus.pdf", "red_flag": false },
+            { "content": "maksutagastus.exe", "red_flag": true }
+        ]
+    },
+    {
+        "templateID": 21,
+        "subject": [
+            { "content": "Uuendused teie sotsiaalkindlustushüvitiste taotluses", "red_flag": false },
+            { "content": "Sotsiaalkindlustushüvitised on peatatud - Kinnitage oma isikut kohe", "red_flag": true }
+        ],
+        "senders": [
+            { "content": "info@socialsecurity.ee", "red_flag": false },
+            { "content": "alerts@socialsecurity-verification.org", "red_flag": true }
+        ],
+        "greetings": [
+            { "content": "Lugupeetud [Täisnimi],", "red_flag": false },
+            { "content": "Tähelepanu: Hüpoteegipidaja!", "red_flag": true }
+        ],
+        "main_content": [
+            { "content": "Teie hiljutine sotsiaalkindlustushüvitiste taotlus on vastu võetud. Saate oma taotluse staatust kontrollida aadressil sotsiaalkindlustus.ee.", "red_flag": false },
+            { "content": "Teie isikukood on ohus. Kinnitage oma isikut kohe, andes oma isikukoodi ja panganduse detailid.", "red_flag": true }
+        ],
+        "endings": [
+            { "content": "Sotsiaalkindlustusamet", "red_flag": false },
+            { "content": "Lugupidamisega, Sotsiaalkindlustuse Verifikatsiooni Büroo", "red_flag": true }
+        ],
+        "links": [
+            { "content": "https://www.sotsiaalkindlustus.ee", "red_flag": false },
+            { "content": "https://www.sotsiaalkindlustus-verification.net", "red_flag": true }
+        ],
+        "attachments": [
+            { "content": "benefits_statement.pdf", "red_flag": false },
+            { "content": "identity_verification.exe", "red_flag": true }
+        ]
+    }  
 ]
