@@ -12,7 +12,7 @@ const Sidebar = () => {
             url: "/",
         },
         {
-            name: "Email Please",
+            name: "Mängi",
             url: "/email-please",
         },
     ];
@@ -42,6 +42,8 @@ const Sidebar = () => {
                 );
             }
         });
+        
+
         setLinks(newLinks);
 
         switch (path) {

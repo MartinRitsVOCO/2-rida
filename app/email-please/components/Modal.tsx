@@ -10,7 +10,7 @@ const Modal = ({ visible, onClose, children, buttonText }: ModalProps) => {
 
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50 bg-gray-700/70">
-      <div className="bg-white p-4 rounded-lg shadow-lg">
+      <div className="bg-white p-4 rounded-lg shadow-lg max-w-[700]">
         <div className="p-6 bg-gray-200 rounded-lg text-black">
           {children}
         </div>
