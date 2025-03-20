@@ -24,9 +24,9 @@ export interface MailContent {
 function createBooleanObject<T extends object>(obj: T): { [K in keyof T]: boolean } {
     const result = {} as { [K in keyof T]: boolean };
     for (const key in obj) {
-      if (Object.prototype.hasOwnProperty.call(obj, key)) {
-        result[key] = false;
-      }
+        if (Object.prototype.hasOwnProperty.call(obj, key)) {
+            result[key] = false;
+        }
     }
     return result;
 }
@@ -34,46 +34,46 @@ function createBooleanObject<T extends object>(obj: T): { [K in keyof T]: boolea
 function setRandomPropertiesToTrue<T extends Record<string, boolean | undefined | null>>(
     obj: T,
     count: number
-  ): T {
+): T {
     const falseKeys: string[] = Object.keys(obj).filter(
-      (key) => obj[key] === false
+        (key) => obj[key] === false
     );
-  
+
     if (count > falseKeys.length) {
-      count = falseKeys.length; // Ensure we don't try to set more than available
+        count = falseKeys.length; // Ensure we don't try to set more than available
     }
-  
+
     const keysToChange: string[] = [];
     const availableKeys = [...falseKeys]; // Create a copy
-  
+
     for (let i = 0; i < count; i++) {
-      const randomIndex = Math.floor(Math.random() * availableKeys.length);
-      const selectedKey = availableKeys.splice(randomIndex, 1)[0];
-      keysToChange.push(selectedKey);
+        const randomIndex = Math.floor(Math.random() * availableKeys.length);
+        const selectedKey = availableKeys.splice(randomIndex, 1)[0];
+        keysToChange.push(selectedKey);
     }
-  
+
     // Type assertion to allow modification
     const mutableObj = obj as Record<string, boolean | undefined | null>;
-  
+
     keysToChange.forEach((key) => {
-      mutableObj[key] = true;
+        mutableObj[key] = true;
     });
-  
+
     return obj;
 }
 
-export const generateMail = (redFlagResult:boolean = false, flagCount:number = 3, previousTemplateID:number|null = null) => {
-    const templateCount:number = mailTemplates.length;
-    let randomIndex:number = Math.floor(Math.random() * templateCount);
+export const generateMail = (redFlagResult: boolean = false, flagCount: number = 3, previousTemplateID: number | null = null) => {
+    const templateCount: number = mailTemplates.length;
+    let randomIndex: number = Math.floor(Math.random() * templateCount);
     if (previousTemplateID !== null && templateCount > 1) {
         while (randomIndex === previousTemplateID) {
             randomIndex = Math.floor(Math.random() * templateCount);
         }
     }
-    
-    const randomTemplate:MailTemplate = mailTemplates[randomIndex];
-    let templateFlags:TemplateFlags = createBooleanObject(randomTemplate);
-    
+
+    const randomTemplate: MailTemplate = mailTemplates[randomIndex];
+    let templateFlags: TemplateFlags = createBooleanObject(randomTemplate);
+
     for (const key in randomTemplate) {
         if (key === 'templateID') {
             delete templateFlags.templateID;
@@ -90,12 +90,12 @@ export const generateMail = (redFlagResult:boolean = false, flagCount:number = 3
         templateFlags = setRandomPropertiesToTrue(templateFlags, flagCount);
     }
 
-    const mailContent:MailContent = {
+    const mailContent: MailContent = {
         templateID: randomTemplate.templateID,
         isRed: redFlagResult,
     };
-    let randomContentIndex:number = 0;
-    let contentArray:Array<MailObject>= [];
+    let randomContentIndex: number = 0;
+    let contentArray: Array<MailObject> = [];
 
     for (const key in templateFlags) {
         if (templateFlags[key] === true) {
