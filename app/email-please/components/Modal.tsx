@@ -5,6 +5,7 @@ interface ModalProps {
   buttonText: string;
 }
 
+// Rules/introduction PopUp
 const Modal = ({ visible, onClose, children, buttonText }: ModalProps) => {
   if (!visible) return null;
 

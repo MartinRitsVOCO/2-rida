@@ -1,3 +1,4 @@
+//Hero section
 const page = () => {
   return (
     <div className="flex flex-col justify-center items-center text-center w-full ">
