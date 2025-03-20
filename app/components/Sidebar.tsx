@@ -8,7 +8,7 @@ const Sidebar = () => {
     const [navTitle, setNavTitle] = useState("");
     const pages = [
         {
-            name: "Home",
+            name: "Kodu",
             url: "/",
         },
         {
@@ -48,16 +48,16 @@ const Sidebar = () => {
 
         switch (path) {
             case "/":
-                document.title = "Home";
-                setNavTitle("Home");
+                document.title = "Kodu | Email Please";
+                setNavTitle("Kodu");
                 break;
             case "/email-please":
-                document.title = "Email Please";
-                setNavTitle("Email Please");
+                document.title = "Mäng | Email Please";
+                setNavTitle("Mäng");
                 break;
             default:
-                document.title = "Page not found";
-                setNavTitle("Page not found");
+                document.title = "Lehte pole | Email Please";
+                setNavTitle("Lehte pole");
                 break;
         }
     }, [path]);

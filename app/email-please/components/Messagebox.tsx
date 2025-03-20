@@ -1,6 +1,6 @@
 const Messagebox = ({ messages }: { messages?: string[] }) => {
   return (
-    <div className="w-full h-50 border-2 border-gray-200 rounded-lg p-4">
+    <div className="w-full h-50 border-2 border-gray-200 rounded-lg p-4 overflow-y-auto max-h-60">
       {messages && messages.length > 0 ? (
         messages.map((message, index) => (
           <div key={index} className="">

@@ -2,13 +2,19 @@
 import Messagebox from "./components/Messagebox";
 import Modal from "./components/Modal";
 import { generateMail, MailContent, MailObject } from "../utils/generateMail";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 interface ModalData {
   visible: boolean;
   buttonText: string;
   modalChildren: React.ReactNode;
   onClose: () => void;
+}
+
+interface GameRecord {
+  correct: number;
+  wrong: number;
+  total: number;
 }
 
 interface Messages {
@@ -28,9 +34,9 @@ const rulesMessage = () => {
 };
 
 const messages:Messages= {
-  correct: "☺",
-  wrong: "WRONG",
-  welcome: "Alustamiseks vali, kas E-kiri on õige või vale",
+  correct: "Fantastiline! Jätka sama suurepärast tööd!",
+  wrong: "Mitte päris, aga jätka! Te arenete!",
+  welcome: "Tere tulemast! Kas olete valmis oma teadmisi proovile panema?",
 };
 
 function redChance() {
@@ -54,6 +60,12 @@ const page = () => {
 
   const [message, setMessage] = useState<string[]>([]);
 
+  const gameRecord = useRef<GameRecord>({
+    correct: 0,
+    wrong: 0,
+    total: 0,
+  });
+
   useEffect(() => {
     setModalData({
       visible: true,
@@ -69,24 +81,32 @@ const page = () => {
 
   const handleTrueClick = () => {
     if (email.isRed) {
-        console.log("True clicked, incorrect");
-        setMessage([messages.wrong, ...message]);
+        // console.log("True clicked, incorrect");
+        gameRecord.current.wrong++;
+        gameRecord.current.total++;
+        setMessage([messages.wrong,`Õigesti tuvastatud: ${gameRecord.current.correct}, Valest arvatud:  ${gameRecord.current.wrong}, Kokku e-kirju:  ${gameRecord.current.total}`, ...message]);
         setEmail(generateMail(redChance(), 3, email.templateID));
     } else {
-        console.log("True clicked, correct");
-        setMessage([messages.correct, ...message]);
+        // console.log("True clicked, correct");
+        gameRecord.current.correct++;
+        gameRecord.current.total++;
+        setMessage([messages.correct,`Õigesti tuvastatud: ${gameRecord.current.correct}, Valest arvatud:  ${gameRecord.current.wrong}, Kokku e-kirju:  ${gameRecord.current.total}`, ...message]);
         setEmail(generateMail(redChance(), 3, email.templateID));
     }
   };
 
   const handleFalseClick = () => {
     if (email.isRed) {
-        console.log("False clicked, correct");
-        setMessage([messages.correct, ...message]);
+        // console.log("False clicked, correct");
+        gameRecord.current.correct++;
+        gameRecord.current.total++;
+        setMessage([messages.correct,`Õigesti tuvastatud: ${gameRecord.current.correct}, Valest arvatud:  ${gameRecord.current.wrong}, Kokku e-kirju:  ${gameRecord.current.total}`, ...message]);
         setEmail(generateMail(redChance(), 3, email.templateID));
     } else {
-        console.log("False clicked, incorrect");
-        setMessage([messages.wrong, ...message]);
+        // console.log("False clicked, incorrect");
+        gameRecord.current.wrong++;
+        gameRecord.current.total++;
+        setMessage([messages.wrong,`Õigesti tuvastatud: ${gameRecord.current.correct}, Valest arvatud:  ${gameRecord.current.wrong}, Kokku e-kirju:  ${gameRecord.current.total}`, ...message]);
         setEmail(generateMail(redChance(), 3, email.templateID));
     }
   };
@@ -98,11 +118,11 @@ const page = () => {
           switch (key) {
             case "senders":
               return (
-                <p key={index}>{(email.senders as MailObject)?.content}</p>
+                <p className="text-sm p-10" key={index}>{(email.senders as MailObject)?.content}</p>
               );
             case "subject":
               return (
-                <p className="text-xl"key={index}>{(email.subject as MailObject)?.content}</p>
+                <p className="text-2xl"key={index}>{(email.subject as MailObject)?.content}</p>
               );
             case "greetings":
               return (
@@ -114,13 +134,13 @@ const page = () => {
               );
             case "endings":
               return (
-                <p key={index}>{(email.endings as MailObject)?.content}</p>
+                <p className="p-15 " key={index}>{(email.endings as MailObject)?.content}</p>
               );
             case "links":
-              return <p key={index}>{(email.links as MailObject)?.content}</p>;
+              return <p className="underline, text-blue-500" key={index}>{(email.links as MailObject)?.content}</p>;
             case "attachments":
               return (
-                <p key={index}>{(email.attachments as MailObject)?.content}</p>
+                <p className="text-sm, underline" key={index}>{(email.attachments as MailObject)?.content}</p>
               );
             default:
               return null;
@@ -131,13 +151,13 @@ const page = () => {
         <div className="flex flex-col justify-around h-full gap-4">
           <button
             onClick={handleTrueClick}
-            className="bg-green-500 hover:bg-green-600 rounded-2xl py-4 px-8 text-xl font-bold"
+            className="bg-green-500 hover:bg-green-800 rounded-2xl py-4 px-8 text-xl font-bold"
           >
             Päris
           </button>
           <button
             onClick={handleFalseClick}
-            className="bg-red-500 hover:bg-red-600 rounded-2xl py-4 px-8 text-xl font-bold"
+            className="bg-red-500 hover:bg-red-800 rounded-2xl py-4 px-8 text-xl font-bold"
           >
             Võlts
           </button>
